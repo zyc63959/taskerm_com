@@ -4,7 +4,8 @@ disablePathToLower = false
 languageCode = "zh-CN"
 hasCJKLanguage = true
 title = "Tasker配置教程站"
-theme = "hugo-octopress"
+theme = "Hugo-Octopress"
+#theme = "hugo-octopress"
 
 # Disqus shortcode
 # Disable comments for any individual post by adding "comments: false" in its frontmatter
