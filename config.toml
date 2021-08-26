@@ -1,0 +1,207 @@
+
+baseurl = "https://taskerm.com"
+disablePathToLower = false
+languageCode = "zh-CN"
+hasCJKLanguage = true
+title = "Tasker配置教程站"
+theme = "hugo-octopress"
+
+# Disqus shortcode
+# Disable comments for any individual post by adding "comments: false" in its frontmatter
+# Note it's not under [params] anymore
+# disqusShortname = "Your disqus shortname"
+
+# Number of blog posts in each pagination page
+paginate = 8
+
+[permalinks]
+post = "/:year-:month-:day-:title/" # change the post URL to look like the old ones
+
+[markup]
+  # Default is startLevel 2 and endLevel 3, we want to render every heading
+  [markup.tableOfContents]
+    endLevel = 4
+    startLevel = 2
+  # set the Chroma highlighting options
+  # https://gohugo.io/getting-started/configuration-markup/#highlight
+  [markup.highlight]
+    style = "solarized-dark"
+  # if you want to keep using Blackfriday
+  # defaultMarkdownHandler = "blackfriday"
+  #   [markup.blackFriday]
+  #     hrefTargetBlank = true # open links in a new tab
+
+[params]
+
+
+  tableOfContents = true
+  # --- Start sidebar options ---
+  # Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
+  sidebarRecentLimit = 8
+
+  # Sidebar header - passed to markdownify so you can write markdown here
+  sidebarHeader = "公告"
+
+  # Sidebar text also supports markdown
+  # New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
+  # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
+  sidebarText = """本网站最近改版，有问题可到 
+
+  [Tasker配置分享站](https://profiles.taskerm.com)
+
+  提问
+  
+
+
+  """
+  
+
+
+  # Sidebar menu - if true will add a sidebar menu between sidebar text and recent posts
+  sidebarMenuEnabled = true
+  sidebarMenuHeader = "链接"
+
+  # sidebar links
+  github = "https://github.com/zyc63959"
+  # bitbucket = "https://bitbucket.org/parsiya/"
+  twitter = "https://twitter.com/zyc63959"
+  keybase = ""
+  stackoverflow = ""
+  linkedin = ""
+  youtube = ""
+  facebook = ""
+  instagram = ""
+
+  # --- End sidebar options ---
+
+  # If set to true, navigation menu links will open in a new window with the exception of links to root ("/")
+  # If this item does not exist or set to false, then navigation menu links will open in the same window
+  navigationNewWindow = true
+
+  # If false, all of blog post will appear on front page (and in pagination)
+  truncate = true
+
+  # Author's name (appears in meta tags and under posts)
+  author = "记忆水晶"
+
+  # This text appears in the site header under website title
+  subtitle = "Tasker中文站"
+
+  # Search engine URL
+  searchEngineURL = "https://www.google.com/search"
+
+  # Text of the "Continue Reading" label. Supports markdown and inline HTML.
+  # For example, &rarr; == right arrow.
+  continueReadingText = "更多内容 &rarr;"
+
+  # Google analytics code - remove if you do not have/want Google Analytics - needs JavaScript
+  # googleAnalytics = "UA-139754549-2"
+
+  # Optional piwik tracking
+  # [params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+
+  # Switch to true to enable RSS icon link
+  rss = true
+
+  # Set to true to use a text label for RSS instead of an icon
+  # This is overwritten by the "rss" setting
+  textrss = false
+
+  # Website's default description
+  description = "Tasker配置教程站是一个分享Tasker配置和教程的中文网站,Tasker基础使用教程安卓入门中文实例图详细配置技巧分享高实用配置；本站的教程主要以个人在使用Tasker过程中总结的经验为主，辅以图片说明，部分附带视频演示；并且是个人长时间使用的配置，无需root。"
+
+  # Populate this with your own search keywords - these will appear in the meta tags
+  # defaultKeywords = ["Tasker", "Tasker配置", "Tasker教程", "Tasker配置教程站","Tasker profiles","安卓手机玩家","安卓玩家","profiles","Tasker course","手机","玩家","android","安卓"]
+
+  # CSS override files
+  # Paths should be relative to the `static` directory
+  # customCSS = ["css/custom.css","css/custom2.css"]
+
+  # 404.html header and text - both support markdown
+  notFoundHeader = "There's nothing here"
+
+  notFoundText = """Please either go back or use the navigation/sidebar menus.
+  """
+
+  # Set to true to hide ReadingTime on posts
+  disableReadingTime = false
+
+  # Set to true to disable downloading of remote Google fonts
+  disableGoogleFonts = false
+
+  # Remove or Set to false to use local fonts
+  # remoteFonts = false
+  
+  # Remove or set to false to use FontAwesome CDN, otherwise the theme uses ForkAwesome local fonts.
+  # fontAwesome = false
+
+  # Generate taxonomy pages
+  generateTaxonomyList = true
+
+  # This is not needed unless alphabetical sort is needed
+  # sortTaxonomyAlphabetical = true
+
+  # Twitter card config
+  # Enable with this.
+  twitterCardEnabled = true
+  # Don't include the @.
+  # twitterCardSite = 
+  # twitterCardDomain = "parsiya.net"
+  # Don't include the @.
+  # twitterCardAuthor = "CryptoGangsta"
+
+  # Set to true to enable compact index. Set to false or remove to go back to classic view.
+  # compactIndex = true
+
+  # Set mainSections.
+  mainSections = ["post", "blog"]
+
+# Menu
+# If navigationNewWindow (under [params]) is set to true then all links except root ("/") will open in a new window
+# If it does not exist or is set to false then links will open in the same window
+[[menu.main]]
+  Name = "主页"
+  URL = "/"
+  weight = -5
+
+[[menu.main]]
+  Name = "教程"
+  URL = "/categories/教程/"
+  weight = -5
+
+[[menu.main]]
+  Name = "资源"
+  URL = "/categories/资源/"
+  weight = -5
+
+[[menu.main]]
+  Name = "讨论"
+  URL = "/categories/讨论/"
+  weight = -5  
+
+ [[menu.main]]
+  Name = "下载"
+  URL = "/tasker-download/"
+  weight = -4 
+
+ [[menu.main]]
+  Name = "关于"
+  URL = "/posts/about/"
+  weight = -3  
+
+
+# Sidebar menus
+# Enable with "sidebarMenuEnabled = true" under [params]
+# Header text is "sidebarMenuHeader" under [params]
+[[menu.sidebar]]
+  Name = "Tasker配置分享站"
+  URL = "https://profiles.taskerm.com"
+  weight = 0
+
+[[menu.sidebar]]
+  Name = "标签"
+  URL = "/tags/"
+  weight = 1
+
