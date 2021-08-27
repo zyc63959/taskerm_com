@@ -49,6 +49,8 @@
 
   <!-- Google Analytics -->
   {{ template "_internal/google_analytics_async.html" . }}
+  <!-- BaiDu TongJi -->
+  {{ partials "custom/adsense" . }}
 
   <!-- Enable Twitter card -->
   {{ with .Site.Params.twitterCardEnabled }}
