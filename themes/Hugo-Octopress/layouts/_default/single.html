@@ -16,12 +16,13 @@
           {{ end }}
           {{ .Content }}
         </div>
+        {{ partial "custom/adsense.html" . }}
         {{ partial "post_footer.html" . }}
       </article>
     </div>
     {{ partial "sidebar.html" . }}
   </div>
-      {{ partial "custom/adsense.html" . }}
+      
       {{ partial "custom/WalineClient.html" . }}
 </div>
 {{ partial "footer.html" . }}
