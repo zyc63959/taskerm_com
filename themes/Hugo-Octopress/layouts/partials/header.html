@@ -51,9 +51,7 @@
   {{ template "_internal/google_analytics_async.html" . }}
   <!-- BaiDu TongJi -->
   {{ partial "custom/baidutongji.html" . }}
-
-  <!-- WalineCDN -->
-  {{ partial "custom/WalineCDN.html" . }}
+  {{ partial "custom/header.html" . }}    
   <!-- Enable Twitter card -->
   {{ with .Site.Params.twitterCardEnabled }}
     {{ partial "custom_twitter_card.html" $ }}
