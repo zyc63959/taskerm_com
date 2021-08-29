@@ -1,7 +1,32 @@
-<div id="waline"></div>
-  <script>
-    Waline({
-      el: '#waline',
-      serverURL: 'https://waline-nine-chi.vercel.app',
+<div id="talkmoe"></div>
+<script type="text/javascript">
+loadComments();
+function loadComments() {
+  if (typeof Waline === 'undefined') {
+    var getScript = (options) => {
+      var script = document.createElement('script');
+      script.defer = true;
+      script.crossOrigin = 'anonymous';
+      Object.keys(options).forEach((key) => {
+          script[key] = options[key];
+      });
+      document.body.appendChild(script);
+    };
+    getScript({
+      src: 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',
+      onload: () => {
+        newWaline();
+      }
     });
-  </script>
+  } else {
+    newWaline();
+  }
+}
+function newWaline() {
+  new Waline({
+      el: '#talkmoe',
+      serverURL: https://waline-nine-chi.vercel.app,
+      placeholder:'Hello!留下你的足迹吧 ！（可直接在评论框内粘贴图片）'
+  });
+}
+</script>
