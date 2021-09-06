@@ -38,12 +38,8 @@ tags:
 
   * 开始所有下载**am start -a com.dv.get.ACTION\_START\_ALL -n com.dv.adm.pay/.AEditor**
   * 停止所有下载**am start -a com.dv.get.ACTION\_STOP\_ALL -n com.dv.adm.pay/.AEditor**
-
-<ol start="2">
-  <li>
-    发送意图（sendintent）
-  </li>
-</ol>
+  
+  2. 发送意图（sendintent）
 
   * 操作：**android.intent.action.MAIN**
   * 类别：默认
@@ -70,29 +66,22 @@ tags:
   1. shell或者adb wifi
       * 开始所有下载am startservice -n idm.internet.download.manager.plus/idm.internet.download.manager.DownloadService -a idm.internet.download.manager.plus:action\_start\_all
       * 停止所有下载am startservice -n idm.internet.download.manager.plus/idm.internet.download.manager.DownloadService -a idm.internet.download.manager.plus:action\_pause\_all
-  2. 发送意图（sendintent）<ol start="">
-      <li>
+  2. 发送意图（sendintent）
+  
         操作：android.intent.action.VIEW
-      </li>
-      <li>
+      
         类别：默认
-      </li>
-      <li>
+      
         Mime类型：空
-      </li>
-      <li>
+      
         数据：下载网址
-      </li>
-      <li>
-        额外：<strong>extra_filename:文件名</strong>
-      </li>
-      <li>
-        包：<strong>idm.internet.download.manager.plus</strong>
-      </li>
-      <li>
+      
+        额外：**extra_filename:文件名**
+      
+        包：**idm.internet.download.manager.plus**
+      
         类：idm.internet.download.manager.Downloader
-      </li>
-    </ol>
+      
 
   3. JavaScriptlet
 
