@@ -31,6 +31,9 @@ post = "/:year-:month-:day-:title/" # change the post URL to look like the old o
   # defaultMarkdownHandler = "blackfriday"
   #   [markup.blackFriday]
   #     hrefTargetBlank = true # open links in a new tab
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
 
