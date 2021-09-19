@@ -13,7 +13,7 @@ function loadComments() {
       document.body.appendChild(script);
     };
     getScript({
-      src: 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js',
+      src: 'https://cdn.jsdelivr.net/npm/@waline/client',
       onload: () => {
         newWaline();
       }
