@@ -49,12 +49,9 @@ post = "/:year-:month-:day-:title/" # change the post URL to look like the old o
   # Sidebar text also supports markdown
   # New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
   # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
-  sidebarText = """本网站最近改版，有问题可到 
-
-  [Tasker配置分享站](https://profiles.taskerm.com)
-
-  提问
-  
+  sidebarText = """ 本站已添加留言提醒功能
+  如果留言填写邮箱，当你的留言收到回复后会收到邮箱提醒
+  欢迎大家测试
 
 
   """
