@@ -95,7 +95,7 @@ post = "/:year-:month-:day-:title/" # change the post URL to look like the old o
   continueReadingText = "更多内容 &rarr;"
 
   # Google analytics code - remove if you do not have/want Google Analytics - needs JavaScript
-  # googleAnalytics = "UA-139754549-2"
+  googleAnalytics = "UA-139754549-2"
 
   # Optional piwik tracking
   # [params.analytics.piwik]
