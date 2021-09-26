@@ -5,7 +5,7 @@ type: post
 date: 2021-08-26T10:00:00+00:00
 url: /tasker-download
 hiddenFromHomePage: false
-keys: tasker下载,Tasker下载,tasker插件下载,Tasker
+keywords: tasker下载,Tasker下载,tasker插件下载,Tasker
 
 ---
 Tasker和APP Factory
