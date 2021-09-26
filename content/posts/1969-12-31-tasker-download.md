@@ -5,6 +5,7 @@ type: post
 date: 2021-08-26T10:00:00+00:00
 url: /tasker-download
 hiddenFromHomePage: false
+keys: tasker下载,Tasker下载,tasker插件下载,Tasker
 
 ---
 Tasker和APP Factory
@@ -12,18 +13,18 @@ Tasker和APP Factory
 
 | Android版本号 | Tasker版本号 | Tasker下载链接 | app factroy 下载链接 |
 | --- | --- | --- | --- |
-| 5.0+ | 5.13.5 | [Tasker v5.13.5](https://tasker.joaoapps.com/releases/playstore/Tasker.5.13.5.apk) | [暂无](https://taskerm.com) |
-| 5.0+ | 5.12.22 | [Tasker v5.12.22](https://tasker.joaoapps.com/releases/playstore/Tasker.5.12.22.apk) | [暂无](https://taskerm.com) |
-| 5.0+ | 5.11.14 | [Tasker v5.11.14](https://tasker.joaoapps.com/releases/playstore/Tasker.11.14.apk) | [暂无](https://taskerm.com) |
-| 5.0+ | 5.10.1 | [Tasker v5.10.1](https://tasker.joaoapps.com/releases/playstore/Tasker.5.10.1.apk) | [暂无](https://taskerm.com) |
-| 5.0+ | 5.10 | [Tasker v5.10](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/tasker/Tasker_5.10.apk) | [暂无](https://taskerm.com) |
+| 5.0+ | 5.13.5 | [Tasker v5.13.5](https://tasker.joaoapps.com/releases/playstore/Tasker.5.13.5.apk) | [](https://taskerm.com) |
+| 5.0+ | 5.12.22 | [Tasker v5.12.22](https://tasker.joaoapps.com/releases/playstore/Tasker.5.12.22.apk) | [](https://taskerm.com) |
+| 5.0+ | 5.11.14 | [Tasker v5.11.14](https://tasker.joaoapps.com/releases/playstore/Tasker.11.14.apk) | [](https://taskerm.com) |
+| 5.0+ | 5.10.1 | [Tasker v5.10.1](https://tasker.joaoapps.com/releases/playstore/Tasker.5.10.1.apk) | [](https://taskerm.com) |
+| 5.0+ | 5.10 | [Tasker v5.10](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/tasker/Tasker_5.10.apk) | [](https://taskerm.com) |
 | 5.0+ | 5.9.3 | [Tasker v5.9.3](https://tasker.joaoapps.com/releases/playstore/Tasker.5.9.3.apk) | [Tasker App Factory v5.9.3](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/tasker/App) |
 | 5.0+ | 5.9.2 | [Tasker v5.9.2](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/2020/03/Tasker-v5.9.2-Paid.apk) | [Tasker App Factory v5.9.2](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/2020/03/Tasker) |
 | 5.0+ | 5.9 | [Tasker v5.9](https://taskerm.com/tasker-5-9paid/) | [Tasker App Factory v5.9](https://taskerm.com/app-factory_5-9/) |
 | 5.0+ | 5.7 | [Tasker v5.7](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/2019/08/Tasker-v5.7-Paid.apk) | [Tasker App Factory v5.7](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/2019/08/Tasker-App-Factory_v5.7.apk) |
 | 5.0+ | 5.0u7 | [Tasker v 5.0u7m](https://tasker.joaoapps.com/releases/playstore/Tasker.5.0u7m.apk) | [Tasker app factory v5.0u7](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/2019/08/Tasker-App-Factory_v5.0u7.apk) |
 | 4.0+ | 4.9u4 | [Tasker v4.9u4 m](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/2019/08/Tasker.4.9u4m.apk) | [Tasker app factory v4.9u4](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/2019/08/tasker-app-factory-for-4.9u4m.apk) |
-| 1.6+ | 1.6u2 | [Tasker v1.6u2m](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/2019/08/Tasker.1.6u2m.apk) | 暂无  |
+| 1.6+ | 1.6u2 | [Tasker v1.6u2m](https://ishare-cf.oss-cn-hongkong.aliyuncs.com/2019/08/Tasker.1.6u2m.apk) |   |
 
 * 带Android 系统的车机，智能手表等设备也可以安装使用
 * Tasker是付费软件，可免费试用1-2周
