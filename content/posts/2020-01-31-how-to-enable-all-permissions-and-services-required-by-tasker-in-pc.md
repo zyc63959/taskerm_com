@@ -4,7 +4,8 @@ author: 记忆水晶
 type: post
 date: 2020-01-31T00:50:26+00:00
 url: /2020/01/31/how-to-enable-all-permissions-and-services-required-by-tasker-in-pc.html
-featured_image: /wp-content/uploads/2020/01/设备管理器-480x300.jpg
+keywords: 写安全,adb wifi,监听音量键,音量键长按,音量键触发,日志,Tasker服务,Tasker权限,Tasker电池优化,Tasker自启动,Tasker杀后台,普通权限,特殊权限,ADB over TCP Tasker,Tasker所有的权限,adb shell,tasker adb shell,tasker adb wifi,WRITE_SECURE_SETTINGS,DUMP,READ_LOGS,SET_VOLUME_KEY_LONG_PRESS_LISTENER,SET_MEDIA_KEY_LISTENER,应用启动管理,电池优化,通知使用权,辅助应用,设备管理器
+description:在安卓手机上一次开启Tasker所有的权限，包含普通权限和特殊权限
 views:
   - 397
 wpcom_likes:
