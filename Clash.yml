@@ -1,0 +1,471 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxies:
+  - name: cf_trojan
+    server: test.taskerprofile.cf
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: herokuapp_trojan
+    server: mycfwork.herokuapp.com
+    port: 443
+    type: trojan
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    network: ws
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+    udp: true
+  - name: cf_vmess
+    server: test.taskerprofile.cf
+    port: 443
+    type: vmess
+    uuid: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-vmess
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: herokuapp_vmess
+    server: mycfwork.herokuapp.com
+    port: 443
+    type: vmess
+    uuid: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-vmess
+      headers:
+        Host: mycfwork.herokuapp.com
+    udp: true
+  - name: 1_4_ct
+    server: 172.64.159.254
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 2_4_ct
+    server: 172.64.155.151
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 3_4_ct
+    server: 172.64.152.249
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 4_4_ct
+    server: 172.64.153.228
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 5_4_ct
+    server: 172.67.163.242
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 6_4_ct
+    server: 172.67.66.17
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 7_4_ct
+    server: 172.67.162.106
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 8_4_ct
+    server: 172.67.35.225
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 1_6_ct
+    server: 2606:4700:90ca:ac93:b08e:953d:ac86:9caf
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 2_6_ct
+    server: 2606:4700:91b9:f866:a884:8d94:9c23:cddd
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 3_6_ct
+    server: 2606:4700:9a64:ae89:5f33:cd5c:6c64:f40b
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 4_6_ct
+    server: 2606:4700:9a65:3c24:dd59:115c:844d:aff0
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 5_6_ct
+    server: 2606:4700:9c6a:7da:dfc5:e33a:f29e:8fef
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 6_6_ct
+    server: 2606:4700:91b6:816:1f11:32de:189b:d6ea
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 7_6_ct
+    server: 2606:4700:99e0:4ebb:2774:a64:1013:78f6
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+  - name: 8_6_ct
+    server: 2606:4700:9a67:8134:65d0:e754:b206:98e1
+    port: 443
+    type: trojan
+    network: ws
+    password: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+    sni: test.taskerprofile.cf
+    skip-cert-verify: false
+    ws-opts:
+      path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-trojan
+      headers:
+        Host: test.taskerprofile.cf
+    udp: true
+proxy-groups:
+  - name: 🔯 代理模式
+    type: select
+    proxies:
+      - 绕过大陆丨黑名单(GFWlist)
+      - 绕过大陆丨白名单(Whitelist)
+  - name: 🔰 选择节点
+    type: select
+    proxies:
+      - DIRECT
+      - ♻️ 自动选择
+      - cf_trojan
+      - cf_vmess
+      - herokuapp_vmess
+      - herokuapp_trojan
+      - 1_4_ct
+      - 2_4_ct
+      - 3_4_ct
+      - 4_4_ct
+      - 5_4_ct
+      - 6_4_ct
+      - 7_4_ct
+      - 8_4_ct
+      - 1_6_ct
+      - 2_6_ct
+      - 3_6_ct
+      - 4_6_ct
+      - 5_6_ct
+      - 6_6_ct
+      - 7_6_ct
+      - 8_6_ct
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - herokuapp_vmess
+      - herokuapp_trojan
+      - cf_vmess
+      - cf_trojan
+      - 1_4_ct
+      - 2_4_ct
+      - 3_4_ct
+      - 4_4_ct
+      - 5_4_ct
+      - 6_4_ct
+      - 7_4_ct
+      - 8_4_ct
+      - 1_6_ct
+      - 2_6_ct
+      - 3_6_ct
+      - 4_6_ct
+      - 5_6_ct
+      - 6_6_ct
+      - 7_6_ct
+      - 8_6_ct
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 180
+    proxies:
+      - cf_vmess
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+      - PROXY
+  - name: 绕过大陆丨黑名单(GFWlist)
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 86400
+    proxies:
+      - DIRECT
+  - name: 绕过大陆丨白名单(Whitelist)
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 86400
+    proxies:
+      - PROXY
+  - name: PROXY
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 86400
+    proxies:
+      - 🔰 选择节点
+rules:
+  - DOMAIN-SUFFIX,yysub.net,DIRECT
+  - DOMAIN-SUFFIX,byte,♻️ 自动选择
+  - DOMAIN-SUFFIX,alibaba.com,DIRECT
+  - DOMAIN-SUFFIX,gvt2.com,DIRECT
+  - DOMAIN-SUFFIX,mmstat.com,DIRECT
+  - PROCESS-NAME,AliSev,DIRECT
+  - DOMAIN-SUFFIX,1688.com,DIRECT
+  - DOMAIN-SUFFIX,tuchong.com,DIRECT
+  - DOMAIN,contentcenter-drcn.dbankcdn.com,DIRECT
+  - DOMAIN-SUFFIX,dbankcdn.com,DIRECT
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,🛑 广告拦截
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,DIRECT
+  - RULE-SET,tld-not-cn,PROXY
+  - RULE-SET,gfw,PROXY
+  - RULE-SET,greatfire,PROXY
+  - RULE-SET,telegramcidr,PROXY
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - GEOIP,DIRECT
+  - GEOIP,CN,DIRECT
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,proxy,🔯 代理模式
+  - MATCH,🔯 代理模式
+proxy-providers: {}
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: ./ruleset/reject.yaml
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+    path: ./ruleset/apple.yaml
+    interval: 86400
+  google:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt
+    path: ./ruleset/google.yaml
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+    path: ./ruleset/direct.yaml
+    interval: 86400
+  private:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+    path: ./ruleset/private.yaml
+    interval: 86400
+  gfw:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+  greatfire:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+    path: ./ruleset/applications.yaml
+    interval: 86400
